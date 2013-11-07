@@ -17,5 +17,5 @@
 /tmp
 
 # General files to ignore 
-.idea		
+.idea
 .DS_Store
