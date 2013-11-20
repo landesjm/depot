@@ -12,7 +12,7 @@ Product.create!(title: 'ScubaPro MK25',
                     %{<p>
                       This apparatus is what allows you to breath air underwater
                       </p>},
-                image_url: 'http://www.scubapro.com/en-US/USA/regulators/products/mk25a700.aspx',
+                image_url: 'http://www.scubapro.com/media/55537/mk25-a700-din.jpg',
                 price: 750.00)
 
 Product.create!(title: 'ScubaPro BCD',
@@ -20,5 +20,5 @@ Product.create!(title: 'ScubaPro BCD',
                     %{<p>
                       Helps maintain your bouyancy
                       </p>},
-                image_url: 'http://www.scubapro.com/en-US/USA/bcs/products/seahawk.aspx',
+                image_url: 'http://www.scubapro.com/media/66612/seahawk-black.jpg',
                 price: 650.00)
