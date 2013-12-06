@@ -13,14 +13,20 @@
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  title: MyString
-  description: MyText
-  image_url: MyString
-  price: 9.99
+bcd:
+  title: 'ScubaPro SeaHawk BCD'
+  description: 'Greatest BCD for travel'
+  image_url: 'http://www.scubapro.com/media/66612/seahawk-black.jpg'
+  price: 699.00
 
-two:
-  title: MyString
-  description: MyText
-  image_url: MyString
-  price: 9.99
+regulator:
+  title: 'ScubaPro MK25/A700'
+  description: 'Regulator for breathing underwater'
+  image_url: 'http://www.scubapro.com/media/55537/mk25-a700-din.jpg'
+  price: 899.00
+
+flashlight:
+  title: 'TUSA LED flashlight'
+  description: 'LED 300'
+  image_url: 'http://tusa.com/imagefly.aspx?p=productimages/TUL-300.jpg&w=400&h=400'
+  price: 75.00

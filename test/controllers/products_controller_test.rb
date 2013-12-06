@@ -2,7 +2,7 @@ require 'test_helper'
 
 class ProductsControllerTest < ActionController::TestCase
   setup do
-    @product = products(:one)
+    @product = products(:bcd)
     @update = {
       title:  'ScubaPro BCD',
       description: 'ScubaPro Knighthawk BCD',
