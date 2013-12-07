@@ -13,11 +13,20 @@ class ProductTest < ActiveSupport::TestCase
     assert product.errors[:image_url].any?
   end
 
-  test 'product name must be unique' do
+  test 'product title must be unique' do
     product = Product.new(title: products(:bcd).title)
     assert product.invalid?
     assert_equal [I18n.translate('errors.messages.taken')],
-                 product.errors[:title]  end
+                 product.errors[:title]
+  end
+
+  test 'product title must be 10 character long' do
+    product = products(:bcd)
+    product.title = 'Too Short'
+    assert product.invalid?
+    assert_equal ["must be at least ten characters long."],
+                 product.errors[:title]
+  end
 
   test 'product price must be positive' do
     product = Product.new(title: 'Tusa underwater flashlight',
