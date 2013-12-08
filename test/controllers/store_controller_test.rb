@@ -10,4 +10,9 @@ class StoreControllerTest < ActionController::TestCase
     assert_select '.price', /\$[,\d]+\.\d\d/
   end
 
+  test "should get counter text on page visit 6" do
+    6.times { get :index }
+    assert_select '.counter', "6 Visits to page"
+  end
+
 end

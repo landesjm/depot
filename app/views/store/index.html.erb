@@ -2,6 +2,11 @@
     <p id="notice"><%= notice %></p>
 <% end %>
 <h1>C & J Scuba Depot Catalog</h1>
+<div class="counter">
+  <% if @count > 5 %>
+    <%= " #{pluralize(@count,'Visit')} to page" %>
+  <% end %>
+</div>
 <% cache ['store', Product.latest] do %>
   <% @products.each do |product| %>
     <% cache ['entry', product] do %>
@@ -11,6 +16,7 @@
         <%= sanitize(product.description) %>
         <div class="price_line">
           <span class="price"><%= number_to_currency(product.price, precision: 2, separator: '.') %></span>
+          <%= button_to 'Add to Cart', line_items_path(product_id: product) %>
         </div>
       </div>
     <% end %>
