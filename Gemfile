@@ -1,5 +1,11 @@
 source 'https://rubygems.org'
 
+group :development do
+  gem 'annotate'
+  gem 'better_errors'
+  gem "binding_of_caller"
+end
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
@@ -33,8 +39,6 @@ group :doc do
 end
 
 gem 'minitest-colorize'
-
-gem 'annotate'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
