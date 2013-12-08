@@ -2,6 +2,11 @@
     <p id="notice"><%= notice %></p>
 <% end %>
 <h1>C & J Scuba Depot Catalog</h1>
+<div class="counter">
+  <% if @count > 5 %>
+    <%= " #{pluralize(@count,'Visit')} to page" %>
+  <% end %>
+</div>
 <% cache ['store', Product.latest] do %>
   <% @products.each do |product| %>
     <% cache ['entry', product] do %>
